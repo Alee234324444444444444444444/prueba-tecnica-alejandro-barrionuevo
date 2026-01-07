@@ -120,7 +120,7 @@ pruebatecnicaabfrontend/
 # Clonar el repositorio
 git clone https://github.com/Alee234324444444444444444444/prueba-tecnica-alejandro-barrionuevo.git
 
-# En la raiz del proyecto se abre una terminal para el backend (pruebatécnicaab):
+# En la raiz del proyecto se abre una terminal para el backend (pruebatécnicaab) NOTA: AL EJECUTAR POR PRIMERA VEZ ESTOS COMANDOS SE VA A EMORAR UNOS MINUTOS PARA QUE SE CREE LA IMAGEN Y COONTENEDORES:
 cd pruebatécnicaab
 
 # Y estando en la ruta del pruebatécnicaab (backend ) ejecutamos:
