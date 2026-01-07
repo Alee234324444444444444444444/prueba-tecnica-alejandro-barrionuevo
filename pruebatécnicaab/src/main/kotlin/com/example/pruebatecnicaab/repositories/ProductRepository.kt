@@ -6,5 +6,6 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface ProductRepository : JpaRepository<Product, Long> {
+    //VERIFICA SI EXISTE UN NOMBRE CON TAL PRODCUTO
     fun existsByNameIgnoreCase(name: String): Boolean
 }

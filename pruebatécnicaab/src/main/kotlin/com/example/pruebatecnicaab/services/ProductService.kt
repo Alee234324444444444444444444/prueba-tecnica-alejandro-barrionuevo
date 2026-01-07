@@ -15,7 +15,8 @@ class ProductService(
     private val productRepository: ProductRepository,
     private val productMapper: ProductMapper
 ) {
-
+    
+    // SERVICIO --> FUNCION PARA CREAR EL PRODCUTO CON LOGICA DE NEGOCIO
     fun createProduct(request: CreateProductRequest): ProductResponse {
         val name = request.name.trim()
 
@@ -36,6 +37,7 @@ class ProductService(
         return productMapper.toResponse(saved)
     }
 
+    //FUNCION PARA FILTRAR PRODCUTOS
     fun findAllProducts(): List<ProductResponse> =
         productMapper.toResponseList(productRepository.findAll())
 }

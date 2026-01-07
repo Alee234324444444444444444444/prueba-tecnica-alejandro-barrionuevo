@@ -3,6 +3,7 @@ package com.example.pruebatecnicaab.models.requests
 import com.fasterxml.jackson.annotation.JsonProperty
 import java.math.BigDecimal
 
+//REQEUST PARA ENVIAR DATOS CREAR UN PRODUCTO
 data class CreateProductRequest(
     val name: String,
     val price: BigDecimal,

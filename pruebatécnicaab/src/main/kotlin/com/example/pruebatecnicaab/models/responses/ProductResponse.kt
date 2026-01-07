@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty
 import java.math.BigDecimal
 import java.time.LocalDateTime
 
+// RESPONSE PARA LA RESPUESTA CUANDO SE CREA UN PRODCUTO
 data class ProductResponse(
     val id: Long,
     val name: String,

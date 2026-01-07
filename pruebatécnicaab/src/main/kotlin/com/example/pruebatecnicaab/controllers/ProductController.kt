@@ -16,10 +16,12 @@ import org.springframework.web.bind.annotation.RestController
 class ProductController(
     private val productService: ProductService
 ) {
+    //API PARACREAR PRODUCTOS
     @PostMapping
     fun createProduct(@RequestBody request: CreateProductRequest): ProductResponse =
         productService.createProduct(request)
 
+    //API PARA FILTRAR TODOS LOS PRODUCTOS
     @GetMapping
     fun findAllProducts(): List<ProductResponse> =
         productService.findAllProducts()

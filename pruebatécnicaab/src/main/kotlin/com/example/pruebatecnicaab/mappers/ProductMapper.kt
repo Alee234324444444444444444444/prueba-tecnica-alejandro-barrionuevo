@@ -5,8 +5,10 @@ import com.example.pruebatecnicaab.models.requests.CreateProductRequest
 import com.example.pruebatecnicaab.models.responses.ProductResponse
 import org.springframework.stereotype.Component
 
+//HEREDA DE BASEMAPPER E IMPLEMENTA TORESPONSE Y TORESPONSELIST
 @Component
 class ProductMapper: BaseMapper<Product, ProductResponse> {
+    // CONVIERTE EL REQUEST A UNA ENTIDAD
     fun toEntity(request: CreateProductRequest): Product{
         return Product(
             name = request.name,
@@ -14,6 +16,7 @@ class ProductMapper: BaseMapper<Product, ProductResponse> {
             stockQuantity = request.stockQuantity
         )
     }
+    //CONVIERTE LA ENTIDAD A UN RESPONSE
     override fun toResponse(entity: Product): ProductResponse {
         return ProductResponse(
             id = entity.id,
@@ -23,8 +26,5 @@ class ProductMapper: BaseMapper<Product, ProductResponse> {
             createdAt = entity.createdAt
         )
     }
-
-
-
 
 }
